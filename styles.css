@@ -1,0 +1,121 @@
+/*
+Main CSS for the Poppin Site.
+*/
+
+/*
+Headers
+I put them at the top so they have the least priority
+    compared to classes/ID's.
+They have distinct sample colors for now.
+*/
+h1{
+    color:red;
+}
+
+h2{
+    color:green;
+}
+
+h3{
+    color:blue;
+}
+
+h4{
+    color:yellow;
+}
+
+h5{
+    color:black;
+}
+
+h6{
+    color:white;
+}
+
+/*
+Body Elements
+*/
+body{
+    background-color:skyblue;
+    max-width:1280px;
+    /*
+    Alternate max width taking big monitors into consideration.
+    max-width:1980px;
+    */
+    /*
+    Background Image ex
+    background-image: url("../media/pexelsbg.jpg")
+    */
+}
+
+p{
+    /*
+    padding-left:25px;
+    font-family:"Georgia", "Serif";
+    line-height:150%;
+    */
+    max-width:700px;
+
+    /*
+    <ul> unordered list
+    <ol> ordered list
+    <li> list item
+
+    <dl> description list
+    <dt> define term in desc list
+    <dd> describe term in desc list
+    */
+}
+
+li{
+    color:black;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/*
+Links
+*/
+a:link{
+    color:darkviolet;
+}
+
+a:visited{
+    color: lightcoral;
+}
+
+a:hover{
+    color:purple;
+}
+
+a:active{
+    color:pink;
+}
+
+/*
+Classes
+*/
+
+
+
+/*
+ID's
+*/
+
+
+
+/*
+Media Queries
+*/
+.first-media-query{
+    color:orange;
+}
+
+@media screen and (max-width:768px){
+    .first-media-query{
+        color:darkcyan;
+    }
+}
