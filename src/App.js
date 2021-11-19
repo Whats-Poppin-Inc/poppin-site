@@ -1,14 +1,14 @@
 import logo from './logo.png';
 import './App.css';
 import Navbar from './layouts/Navbar';
+import PersonCard from './layouts/PersonCard';
 function App() {
   return (
-    <div className="App">
+    <div className="App App-bkg">
       <Navbar />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+      <div className="container mt-3 mb-3 App-bkg">
+        <PersonCard name = {"Miles Weber"} image = {logo}/>
+      </div>
     </div>
   );
 }
