@@ -4,15 +4,16 @@ import ReactDOM from "react-dom";
 import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./layouts/Navbar";
+import Person from "./pages/Person";
 
 
 function App(){
   return(
-    
     <Router>
       <Navbar />
       <Routes>
         <Route exact path="/" element = {<Home />}></Route>
+        <Route path="/Person/:Name" element = {<Person />}></Route>
       </Routes>
     </Router>
   );
