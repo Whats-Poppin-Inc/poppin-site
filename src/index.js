@@ -1,10 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import ReactDOM from "react-dom"; 
 import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./layouts/Navbar";
 import Person from "./pages/Person";
+import PageNotFound from "./pages/PageNotFound";
 
 
 function App(){
@@ -13,7 +14,15 @@ function App(){
       <Navbar />
       <Routes>
         <Route exact path="/" element = {<Home />}></Route>
-        <Route path="/Person/:Name" element = {<Person />}></Route>
+        <Route exact path="*" element = {<PageNotFound />}></Route>
+
+        {/*About Pages for each person*/}
+        <Route path="/Miles" element = {<Person name = {"Miles"} />}></Route>
+        <Route path="/Isaac" element = {<Person name = {"Isaac"} />}></Route>
+        <Route path="/Evan" element = {<Person name = {"Evan"} />}></Route>
+        <Route path="/Emily" element = {<Person name = {"Emily"} />}></Route>
+        <Route path="/Sammy" element = {<Person name = {"Sammy"} />}></Route>
+        
       </Routes>
     </Router>
   );
