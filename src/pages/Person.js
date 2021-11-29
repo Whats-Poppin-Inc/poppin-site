@@ -3,7 +3,7 @@ import '../App.css';
 
 function Person(props){
     return(
-        <h1>Test {props.name}</h1>
+        <h1>About {props.name}</h1>
     )
 }
 export default Person;
