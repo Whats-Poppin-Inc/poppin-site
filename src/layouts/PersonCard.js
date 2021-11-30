@@ -8,7 +8,8 @@ function PersonCard(props){
             <div className="card-body">
                 <h5 className="card-title">{props.name}</h5>
                 <p className="card-text">{props.info}</p>
-                <a href={props.link} className="btn btn-primary">{props.linkText}</a>
+                {/* eslint-disable-next-line react/jsx-no-target-blank*/}
+                <a href={props.link} target = "_blank" rel = "noreferer" className="btn btn-primary">{props.linkText}</a>
                 <br />
                 <Link to={"/" + props.fname} className="btn btn-primary mt-3">{"Learn more about " + props.fname}</Link>
             </div>

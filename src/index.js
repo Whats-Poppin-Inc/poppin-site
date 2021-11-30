@@ -6,6 +6,7 @@ import reportWebVitals from "./reportWebVitals";
 import Navbar from "./layouts/Navbar";
 import Person from "./pages/Person";
 import PageNotFound from "./pages/PageNotFound";
+import logo from "./logo.png";
 
 
 function App(){
@@ -17,11 +18,11 @@ function App(){
         <Route exact path="*" element = {<PageNotFound />}></Route>
 
         {/*About Pages for each person*/}
-        <Route path="/Miles" element = {<Person name = {"Miles"} />}></Route>
-        <Route path="/Isaac" element = {<Person name = {"Isaac"} />}></Route>
-        <Route path="/Evan" element = {<Person name = {"Evan"} />}></Route>
-        <Route path="/Emily" element = {<Person name = {"Emily"} />}></Route>
-        <Route path="/Sammy" element = {<Person name = {"Sammy"} />}></Route>
+        <Route path="/Miles" element = {<Person name = {"Miles"} image = {logo} />}></Route>
+        <Route path="/Isaac" element = {<Person name = {"Isaac"} image = {logo} />}></Route>
+        <Route path="/Evan" element = {<Person name = {"Evan"} image = {logo} />}></Route>
+        <Route path="/Emily" element = {<Person name = {"Emily"} image = {logo} />}></Route>
+        <Route path="/Sammy" element = {<Person name = {"Sammy"} image = {logo} />}></Route>
         
       </Routes>
     </Router>

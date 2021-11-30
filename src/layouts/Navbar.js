@@ -16,14 +16,20 @@ function Navbar(){
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item">
-                        {//<a className="nav-link active" aria-current="page" href="#">Home</a> 
-                        }
-                    </li>
-                    <li className="nav-item">
-                        {//<a className="nav-link" href="#">Link</a>
-                        }
-                    </li>       
+                <li className="nav-item dropdown">
+                    {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        People
+                    </a>
+                    <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><Link className = "dropdown-item"to = "/Miles">Miles Weber</Link></li>
+                        <li><Link className = "dropdown-item"to = "/Isaac">Isaac Traina</Link></li>
+                        <li><Link className = "dropdown-item"to = "/Evan">Evan Stoddard</Link></li>
+                        <li><Link className = "dropdown-item"to = "/Emily">Emily Chrisostono</Link></li>
+                        {/*<li><hr className="dropdown-divider" /></li>*/}
+                        
+                    </ul>
+                    </li>     
                 </ul>      
             </div>
         </div>
