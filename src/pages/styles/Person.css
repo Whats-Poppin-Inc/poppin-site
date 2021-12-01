@@ -1,0 +1,11 @@
+.thumbnail{
+    float: left;
+}
+.thumbnail-text{
+    float: none;
+
+}
+.about-container{
+    min-height: 100%;
+    overflow: hidden;
+}
