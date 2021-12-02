@@ -7,7 +7,7 @@ import Navbar from "./layouts/Navbar";
 import Person from "./pages/Person";
 import PageNotFound from "./pages/PageNotFound";
 import logo from "./logo.png";
-
+import Footer from "./layouts/Footer";
 
 function App(){
   return(
@@ -25,6 +25,7 @@ function App(){
         <Route path="/Sammy" element = {<Person name = {"Sammy"} image = {logo} />}></Route>
         
       </Routes>
+      <Footer />
     </Router>
   );
 }
