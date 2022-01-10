@@ -15,6 +15,7 @@ function Person(props){
             <div className="border container about-container p-3">
                 <img src={props.image} alt={'Picture of ' + props.name} className="w-25 me-3 mb-3 thumbnail img-thumbnail" />                
                 <p className = "thumbnail-text">{about}</p>
+                {/* eslint-disable-next-line react/jsx-no-target-blank*/}
                 <a href={link} target = "_blank" rel = "noreferer" className="btn btn-primary">Link to {link_text}</a>
                 
             </div>
