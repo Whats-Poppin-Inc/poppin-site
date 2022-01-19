@@ -12,6 +12,7 @@ import Miles from './Miles.json';
 import Isaac from './Isaac.json';
 import Evan from'./Evan.json';
 import Emily from './Emily.json';
+import Projects from './pages/Projects';
 
 function App(){
   return(
@@ -27,6 +28,9 @@ function App(){
         <Route path="/Evan" element = {<Person name = {"Evan"} image = {logo} json = {Evan} />}></Route>
         <Route path="/Emily" element = {<Person name = {"Emily"} image = {logo} json = {Emily} />}></Route>
         <Route path="/Sammy" element = {<Person name = {"Sammy"} image = {logo} />}></Route>
+        
+        {/*Other Routes*/}
+        <Route path="/projects" element = {<Projects finished = {false} />}></Route> 
         
       </Routes>
       <Footer />

@@ -19,6 +19,7 @@ function Navbar(){
             <div className="collapse navbar-collapse" id="navbarSupportedContent">            
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                 <li className="nav-item"><Link className = "nav-link" to="/">Home</Link></li>
+                <li className="nav-item"><Link className = "nav-link" to="/projects">Projects</Link></li>
                 <li className="nav-item dropdown">
                     {/* eslint-disable-next-line jsx-a11y/anchor-is-valid*/}
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,7 +33,8 @@ function Navbar(){
                         {/*<li><hr className="dropdown-divider" /></li>*/}
                         
                     </ul>
-                    </li>     
+                    </li>
+                     
                 </ul>      
             </div>
         </div>
