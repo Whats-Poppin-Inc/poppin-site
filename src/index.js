@@ -8,10 +8,11 @@ import Person from "./pages/Person";
 import PageNotFound from "./pages/PageNotFound";
 import logo from "./logo.png";
 import Footer from "./layouts/Footer";
-import Miles from './Miles.json';
-import Isaac from './Isaac.json';
-import Evan from'./Evan.json';
-import Emily from './Emily.json';
+import Miles from './assets/json_templates/Miles.json';
+import Milespfp from "./assets/images/Miles.png";
+import Isaac from './assets/json_templates/Isaac.json';
+import Evan from'./assets/json_templates/Evan.json';
+import Emily from './assets/json_templates/Emily.json';
 import Projects from './pages/Projects';
 
 function App(){
@@ -23,7 +24,7 @@ function App(){
         <Route exact path="*" element = {<PageNotFound />}></Route>
 
         {/*About Pages for each person*/}
-        <Route path="/Miles" element = {<Person name = {"Miles"} image = {logo} json = {Miles} />}></Route>
+        <Route path="/Miles" element = {<Person name = {"Miles"} image = {Milespfp} json = {Miles} />}></Route>
         <Route path="/Isaac" element = {<Person name = {"Isaac"} image = {logo} json = {Isaac} />}></Route>
         <Route path="/Evan" element = {<Person name = {"Evan"} image = {logo} json = {Evan} />}></Route>
         <Route path="/Emily" element = {<Person name = {"Emily"} image = {logo} json = {Emily} />}></Route>
