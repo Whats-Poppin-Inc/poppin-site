@@ -1,5 +1,9 @@
 .card-width{
     max-width: 25%;
-    min-width: 300px;
+    min-width: 302px;
+}
+.pic-size{
+    width: 300px;
+    height: 300px;
 }
 
