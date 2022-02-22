@@ -31,7 +31,7 @@ function App(){
         <Route path="/Sammy" element = {<Person name = {"Sammy"} image = {logo} />}></Route>
         
         {/*Other Routes*/}
-        <Route path="/projects" element = {<Projects finished = {false} />}></Route> 
+        <Route path="/projects" element = {<Projects finished = {true} />}></Route> 
         
       </Routes>
       <Footer />

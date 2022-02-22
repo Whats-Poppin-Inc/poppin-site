@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "../layouts/ProjectCard";
+import poppin from "../assets/json_templates/poppin_site.json";
 
 function Projects(props){
     if(props.finished === false){        
@@ -13,7 +14,7 @@ function Projects(props){
                 <h1>Projects</h1>
                 <br />
                 <br />
-                <ProjectCard projectName = "What's Poppin? Website" projectDescription = "placeholder"/>
+                <ProjectCard json = {poppin}/>
             </div>
         );
     }
