@@ -10,26 +10,26 @@ const Home = () => {
     <div className="container mb-3 App-bkg">
       <span className = "grid-container">
         <PersonCard 
-        fname = {"Miles"} 
-        name = {"Miles Weber"} 
-        image = {Milespfp} 
-        info = {"Fullstack Developer & Cybersecurity Student at West Virginia University"} 
-        link = {"https://github.com/x13xDread"} 
-        linkText = {"Github"} />
+          fname = {"Miles"} 
+          name = {"Miles Weber"} 
+          image = {Milespfp} 
+          info = {"Fullstack Developer & Cybersecurity Student at West Virginia University"} 
+          link = {"https://github.com/x13xDread"} 
+          linkText = {"Github"} />
         <PersonCard 
-        fname = {"Isaac"} 
-        name = {"Isaac Traina"} 
-        image = {logo} 
-        info = {"Student at Rochester Institute of Technology"} 
-        link = {"https://github.com/ATY02"} 
-        linkText = {"Github"} />
+          fname = {"Isaac"} 
+          name = {"Isaac Traina"} 
+          image = {logo} 
+          info = {"Student at Rochester Institute of Technology"} 
+          link = {"https://github.com/ATY02"} 
+          linkText = {"Github"} />
         <PersonCard
-         fname = {"Evan"} 
-         name = {"Evan Stoddard"} 
-         image = {logo} 
-         info = {"Student at Rochester Institute of Technology"} 
-         link = {"https://github.com/evstod"} 
-         linkText = {"Github"} />
+          fname = {"Evan"} 
+          name = {"Evan Stoddard"} 
+          image = {logo} 
+          info = {"Student at Rochester Institute of Technology"} 
+          link = {"https://github.com/evstod"} 
+          linkText = {"Github"} />
         <PersonCard
           fname = {"Emily"}
           name = {"Emily Chrisostomo"}
