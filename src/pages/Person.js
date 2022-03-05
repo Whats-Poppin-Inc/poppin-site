@@ -6,7 +6,7 @@ import ViewSDKClient from "./scripts/ViewSDKClient";
 class Person extends Component {
     constructor() {
         super();
-        this.viewSDKClient = new ViewSDKClient("https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf");
+        this.viewSDKClient = new ViewSDKClient("https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf","Bodea Brochure");
     }
 
     previewFile = () => {

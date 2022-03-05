@@ -1,9 +1,14 @@
-require('dotenv').config();
-var url;
+import secrets from '../../secrets.json';
+var pdf_url, 
+    file_name;
+
+const apikey = secrets.PDF_API
+
 class ViewSDKClient {
     
-    constructor(pdf) {
-        url = pdf
+    constructor(pdf, fileName) {
+        pdf_url = pdf
+        file_name = fileName
         this.readyPromise = new Promise((resolve) => {
             if (window.AdobeDC) {
                 resolve();
@@ -24,7 +29,7 @@ class ViewSDKClient {
     previewFile(divId, viewerConfig) {
         const config = {
             /* Pass your registered client id */
-            clientId: "8c0cd670273d451cbc9b351b11d22318",
+            clientId: apikey,
         };
         if (divId) { /* Optional only for Light Box embed mode */
             /* Pass the div id in which PDF should be rendered */
@@ -39,7 +44,7 @@ class ViewSDKClient {
             content: {
                 /* Location of file where it is hosted */
                 location: {
-                    url: url,
+                    url: pdf_url,
                     /*
                     If the file URL requires some additional headers, then it can be passed as follows:-
                     headers: [
@@ -54,7 +59,7 @@ class ViewSDKClient {
             /* Pass meta data of file */
             metaData: {
                 /* file name */
-                fileName: "Bodea Brochure.pdf",
+                fileName: file_name,
                 /* file ID */
                 id: "6d07d124-ac85-43b3-a867-36930f502ac6",
             }
@@ -67,7 +72,7 @@ class ViewSDKClient {
         /* Initialize the AdobeDC View object */
         this.adobeDCView = new window.AdobeDC.View({
             /* Pass your registered client id */
-            clientId: "8c0cd670273d451cbc9b351b11d22318",
+            clientId: apikey,
             /* Pass the div id in which PDF should be rendered */
             divId,
         });
