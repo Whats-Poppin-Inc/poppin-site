@@ -1,8 +1,7 @@
-import secrets from '../../secrets.json';
 var pdf_url, 
     file_name;
 
-const apikey = secrets.PDF_API
+const apikey = process.env.PDF_API
 
 class ViewSDKClient {
     

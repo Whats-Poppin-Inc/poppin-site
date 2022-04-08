@@ -6,7 +6,7 @@ function Navbar(){
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
             <Link className="navbar-brand" to="/">
-                <div class="navbar-brand">
+                <div className="navbar-brand">
                     <img src={logo} width="30" height="30" className="d-inline-block align-top" alt=""/>
                     What's Poppin?
                 </div>
