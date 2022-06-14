@@ -15,6 +15,9 @@ import Evan from'./assets/json_templates/Evan.json';
 import Emily from './assets/json_templates/Emily.json';
 import Projects from './pages/Projects';
 
+//resumes
+import EvanPDF from './assets/resumes/Evan-Stoddard.pdf';
+
 function App(){
   return(
     <Router>
@@ -26,12 +29,12 @@ function App(){
         {/*About Pages for each person*/}
         <Route path="/Miles" element = {<Person name = {"Miles"} image = {Milespfp} json = {Miles} />}></Route>
         <Route path="/Isaac" element = {<Person name = {"Isaac"} image = {logo} json = {Isaac} />}></Route>
-        <Route path="/Evan" element = {<Person name = {"Evan"} image = {logo} json = {Evan} />}></Route>
+        <Route path="/Evan" element = {<Person name = {"Evan"} image = {logo} json = {Evan} resume = {EvanPDF} />}></Route>
         <Route path="/Emily" element = {<Person name = {"Emily"} image = {logo} json = {Emily} />}></Route>
         <Route path="/Sammy" element = {<Person name = {"Sammy"} image = {logo} />}></Route>
         
         {/*Other Routes*/}
-        <Route path="/projects" element = {<Projects finished = {false} />}></Route> 
+        <Route path="/projects" element = {<Projects finished = {true} />}></Route> 
         
       </Routes>
       <Footer />
