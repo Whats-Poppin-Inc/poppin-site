@@ -6,15 +6,17 @@ function ProjectCard(props){
     if(image)
         return(            
             // add image to this div
-            <div className="grid-container text-light border">
-                <div className = "row">
+            <div className="text-light border border-3 border-dark rounded" style={{background: "#212529"}}>
+                <div className = "d-flex flex-row">
+                    
                     <img 
                         src = {image} 
-                        className="card-img-top col-md-auto" 
-                        //style={{width: "50%", height: "50%", minWidth: "100px", minHeight: "100px", maxHeight:"200px",maxWidth:"200px"}}
+                        className="p-2" 
+                        style={{width: "50%", height: "50%", minWidth: "100px", minHeight: "100px", maxHeight:"200px",maxWidth:"200px"}}
                         alt = {json.project_name} 
                     />
-                    <div className="col-md-auto">
+                    
+                    <div className="p-2">
                         <h1>{json.project_name}</h1>
                         <h4>{json.project_description}</h4>
                         
