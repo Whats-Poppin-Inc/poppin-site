@@ -6,7 +6,7 @@ function ProjectCard(props){
     if(image)
         return(            
             // add image to this div
-            <div className="text-light border border-3 border-dark rounded" style={{background: "#212529"}}>
+            <div className="text-light border border-3 border-dar= rounded mb-3" style={{background: "#212529"}}>
                 <div className = "d-flex flex-row">
                     
                     <img 
@@ -17,8 +17,8 @@ function ProjectCard(props){
                     />
                     
                     <div className="p-2">
-                        <h1>{json.project_name}</h1>
-                        <h4>{json.project_description}</h4>
+                        <h2>{json.project_name}</h2>
+                        <p>{json.project_description}</p>
                         
                         <br />
                         <span><h5><a href={json.project_link} className = "">Github Link</a> <a href={json.live_project_link} className = "">Project Link</a></h5></span>

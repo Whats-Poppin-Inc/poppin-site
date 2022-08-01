@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "../layouts/ProjectCard";
 import poppin from "../assets/json_templates/poppin_site.json";
+import code from "../assets/json_templates/code_poppin_site.json"
 //poppin projects import
 import logo from "../logo.png";
 function Projects(props){
@@ -17,6 +18,7 @@ function Projects(props){
                 <br />
                 <br />
                 <ProjectCard json = {poppin} image = {logo}/>
+                <ProjectCard json = {code} image = {logo}/>
             </div>
         );
     }
