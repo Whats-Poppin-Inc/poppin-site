@@ -17,7 +17,7 @@ import Projects from './pages/Projects';
 
 //resumes
 import EvanPDF from './assets/resumes/Evan-Stoddard.pdf';
-
+import MilesPDF from './assets/resumes/Miles-Weber.pdf'
 function App(){
   return(
     <Router>
@@ -27,7 +27,7 @@ function App(){
         <Route exact path="*" element = {<PageNotFound />}></Route>
 
         {/*About Pages for each person*/}
-        <Route path="/Miles" element = {<Person name = {"Miles"} image = {Milespfp} json = {Miles} />}></Route>
+        <Route path="/Miles" element = {<Person name = {"Miles"} image = {Milespfp} json = {Miles} resume={MilesPDF}/>}></Route>
         <Route path="/Isaac" element = {<Person name = {"Isaac"} image = {logo} json = {Isaac} />}></Route>
         <Route path="/Evan" element = {<Person name = {"Evan"} image = {logo} json = {Evan} resume = {EvanPDF} />}></Route>
         <Route path="/Emily" element = {<Person name = {"Emily"} image = {logo} json = {Emily} />}></Route>

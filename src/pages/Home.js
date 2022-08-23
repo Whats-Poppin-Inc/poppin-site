@@ -13,7 +13,7 @@ const Home = () => {
           fname = {"Miles"} 
           name = {"Miles Weber"} 
           image = {Milespfp} 
-          info = {"Fullstack Developer & Cybersecurity Student at West Virginia University"} 
+          info = {"Fullstack Developer & Computer Software Engineering Student at Thaddeus Stevens College of Technology"} 
           link = {"https://github.com/x13xDread"} 
           linkText = {"Github"} />
         <PersonCard 
