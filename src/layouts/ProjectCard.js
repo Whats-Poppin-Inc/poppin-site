@@ -18,6 +18,8 @@ function ProjectCard(props){
                     
                     <div className="p-2">
                         <h2>{json.project_name}</h2>
+                        <h5>By {json.by}</h5>
+                        
                         <p>{json.project_description}</p>
                         
                         <br />
